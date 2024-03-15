@@ -42,6 +42,6 @@ class Var(object):
         data = response.read().decode('utf-8')
         TOS = data.strip()
 
-    TN_API = environ.get('TN_API')
+    TN_API = environ.get('TN_API',"c3d0e3a1d93b36159af6eea66c4e12f7b9787bbd")
     MODE=environ.get("MODE", "primary")
     SECONDARY=True if MODE.lower() == "secondary" else False
