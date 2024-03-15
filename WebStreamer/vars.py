@@ -8,9 +8,9 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(env.get("API_ID", "24010108"))
-    API_HASH = str(env.get("API_HASH", "8d89700b2fc09a3aa6c906cbed65b040"))
-    BOT_TOKEN = str(env.get("BOT_TOKEN", "6379424594:AAF7xvKCvdlx7fNATPxa-Ic1pdxRn6wSpyo"))
+    API_ID = int(environ.get("API_ID", "24010108"))
+    API_HASH = str(environ.get("API_HASH", "8d89700b2fc09a3aa6c906cbed65b040"))
+    BOT_TOKEN = str(environ.get("BOT_TOKEN", "6379424594:AAF7xvKCvdlx7fNATPxa-Ic1pdxRn6wSpyo"))
     SLEEP_THRESHOLD = int(environ.get("SLEEP_THRESHOLD", "60"))  # 1 minte
     WORKERS = int(environ.get("WORKERS", "6"))  # 6 workers = 6 commands at once
     BIN_CHANNEL = int(
